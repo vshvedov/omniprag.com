@@ -31,7 +31,6 @@ body:before {
 .reflection-container .reflection-content {
   height: 80vh;
   width: 80vh;
-  background: url(../img/o-rune.png);
   background-size: cover;
   background-position: center;
   transform: rotateX(0) rotateY(0);
