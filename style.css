@@ -32,3 +32,22 @@ h1 {
     font-weight: normal;
     color: neon;
 }
+
+.links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.links a {
+    color: #0f0; /* Green text color to match theme */
+    text-decoration: none;
+    font-family: 'Press Start 2P', cursive;
+    font-size: calc(5px + 1vmin);
+    transition: color 0.3s;
+}
+
+.links a:hover {
+    color: #8df802; /* Color changes on hover */
+}
