@@ -103,3 +103,12 @@ particlesJS("particles-js", {
     },
     "retina_detect": true
 });
+
+new Ztextify("#omniprag-text", {
+    depth: "1rem",
+    layers: 10,
+    fade: true,
+    direction: "both",
+    event: "pointer",
+    eventRotation: "30deg"
+});

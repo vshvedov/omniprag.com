@@ -16,14 +16,14 @@ body, html {
     background-color: #000;
 }
 
-.centered {
-    position: absolute;
+.centered h1 {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    font-family: 'Press Start 2P', cursive;
+    font-size: calc(10px + 2vmin);
     color: #0f0;
-    font-family: 'Press Start 2P', cursive; /* Pixel art-style font from Google Fonts */
-    font-size: calc(10px + 2vmin); /* Responsive font size */
-    text-transform: uppercase;
     text-align: center;
-    width: 100%;
 }
 
 h1 {
