@@ -18,17 +18,24 @@ body, html {
 
 .centered {
     position: absolute;
-    color: #0f0;
-    font-family: 'Press Start 2P', cursive; /* Pixel art-style font from Google Fonts */
-    font-size: calc(10px + 2vmin); /* Responsive font size */
+    font-family: 'Press Start 2P', cursive;
+    font-size: calc(10px + 2vmin);
     text-transform: uppercase;
     text-align: center;
     width: 100%;
+    background: linear-gradient(180deg, #0f0, #020, #0f0);
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: matrixEffect 1s infinite linear;
+}
+
+@keyframes matrixEffect {
+    0%   { background-position: 0 0; }
+    100% { background-position: 0 -100px; }
 }
 
 h1 {
     margin: 0;
     padding: 0;
     font-weight: normal;
-    color: neon;
 }
