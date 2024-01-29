@@ -23,8 +23,6 @@ body, html {
     text-transform: uppercase;
     text-align: center;
     width: 100%;
-    background: linear-gradient(180deg, #0f0, #020, #0f0);
-    -webkit-background-clip: text;
     color: transparent;
 }
 
