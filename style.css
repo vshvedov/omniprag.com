@@ -19,10 +19,11 @@ body, html {
 .centered {
     position: absolute;
     color: #0f0;
-    font-family: 'Arial', sans-serif;
-    font-size: 3em;
+    font-family: 'Press Start 2P', cursive; /* Pixel art-style font from Google Fonts */
+    font-size: calc(10px + 2vmin); /* Responsive font size */
     text-transform: uppercase;
-    letter-spacing: 5px;
+    text-align: center;
+    width: 100%;
 }
 
 h1 {
