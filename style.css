@@ -35,6 +35,24 @@ body, html {
     border: 3px solid #000;
     position: relative;
     z-index: 10;
+    white-space: nowrap;
+}
+
+/* Responsive styles for mobile */
+@media (max-width: 768px) {
+    #omniprag-text {
+        font-size: 40px;
+        padding: 15px;
+        white-space: normal;
+        word-break: break-word;
+    }
+}
+
+@media (max-width: 480px) {
+    #omniprag-text {
+        font-size: 30px;
+        padding: 10px;
+    }
 }
 
 h1 {
@@ -218,5 +236,86 @@ h1 {
     }
     100% {
         background-position: 0% 50%;
+    }
+}
+
+/* Additional responsive styles */
+@media (max-width: 768px) {
+    .tagline {
+        max-width: 90%;
+        padding: 25px;
+        margin: 20px auto;
+    }
+    
+    .tagline p {
+        font-size: 16px;
+    }
+    
+    .tagline p strong {
+        font-size: 18px;
+    }
+    
+    .tech-stack {
+        gap: 15px;
+    }
+    
+    .tech-box {
+        width: 140px;
+        padding: 18px;
+    }
+    
+    .tech-box h3 {
+        font-size: 18px;
+    }
+    
+    .tech-box p {
+        font-size: 13px;
+    }
+    
+    .links {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    
+    .links a {
+        width: 200px;
+        text-align: center;
+        margin: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .tagline {
+        padding: 20px;
+    }
+    
+    .tagline p {
+        font-size: 14px;
+    }
+    
+    .tagline p strong {
+        font-size: 16px;
+    }
+    
+    .tagline .email a {
+        font-size: 16px;
+    }
+    
+    .tech-stack {
+        gap: 10px;
+    }
+    
+    .tech-box {
+        width: 120px;
+        padding: 15px;
+    }
+    
+    .tech-box h3 {
+        font-size: 16px;
+    }
+    
+    .tech-box p {
+        font-size: 12px;
     }
 }
