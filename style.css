@@ -273,15 +273,19 @@ h1 {
     }
     
     .links {
+        display: flex;
         flex-direction: column;
         align-items: center;
         gap: 15px;
+        margin-top: 30px;
+        margin-bottom: 30px;
     }
     
     .links a {
         width: 200px;
         text-align: center;
-        margin: 0;
+        margin: 0 !important;
+        display: block;
     }
 }
 
@@ -317,5 +321,16 @@ h1 {
     
     .tech-box p {
         font-size: 12px;
+    }
+    
+    .links {
+        gap: 12px;
+        padding: 0 20px;
+    }
+    
+    .links a {
+        width: 100%;
+        max-width: 280px;
+        padding: 12px 20px;
     }
 }
