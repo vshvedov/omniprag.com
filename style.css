@@ -304,22 +304,51 @@ h1 {
     transition: all 0.3s;
 }
 
-.links a span {
+.links a .link-content {
     position: relative;
     z-index: 2;
     color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.links a .link-icon {
+    width: 20px;
+    height: 20px;
+    filter: brightness(0) invert(1);
 }
 
 .links a:hover::before {
     background-color: #fff;
 }
 
-.links a:hover span {
+.links a:hover .link-content {
     color: #000;
+}
+
+.links a:hover .link-icon {
+    filter: brightness(0);
 }
 
 .links a:hover {
     transform: translateY(-2px);
+}
+
+.communication-note {
+    margin: 25px auto 40px;
+    max-width: 600px;
+    padding: 0 20px;
+}
+
+.communication-note p {
+    font-family: 'JetBrains Mono', monospace;
+    color: #999;
+    font-size: 14px;
+    line-height: 1.6;
+    text-align: center;
+    margin: 0;
+    font-style: italic;
 }
 
 @keyframes aurora {
@@ -397,6 +426,16 @@ h1 {
         margin: 0 !important;
         display: block;
     }
+
+    .communication-note {
+        max-width: 90%;
+        padding: 0 15px;
+        margin: 20px auto 30px;
+    }
+
+    .communication-note p {
+        font-size: 13px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -455,5 +494,14 @@ h1 {
         width: 100%;
         max-width: 280px;
         padding: 12px 20px;
+    }
+
+    .communication-note {
+        padding: 0 10px;
+        margin: 15px auto 25px;
+    }
+
+    .communication-note p {
+        font-size: 12px;
     }
 }
